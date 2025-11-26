@@ -2,6 +2,7 @@ import { MetricsCard } from "@/components/dashboard/MetricsCard";
 import { TrendChart } from "@/components/dashboard/TrendChart";
 import { PlatformChart } from "@/components/dashboard/PlatformChart";
 import { DataTable } from "@/components/dashboard/DataTable";
+import { ChatPanel } from "@/components/chat/ChatPanel";
 import { mockData, aggregateByDate, aggregateByPlatform, calculateTotals } from "@/data/mockData";
 import { TrendingUp, MousePointer, Users, DollarSign } from "lucide-react";
 
@@ -86,6 +87,9 @@ const Index = () => {
         {/* Data Table */}
         <DataTable data={mockData} />
       </main>
+
+      {/* Chat Panel */}
+      <ChatPanel />
     </div>
   );
 };
