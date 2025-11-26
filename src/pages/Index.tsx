@@ -2,7 +2,6 @@ import { MetricsCard } from "@/components/dashboard/MetricsCard";
 import { TrendChart } from "@/components/dashboard/TrendChart";
 import { PlatformChart } from "@/components/dashboard/PlatformChart";
 import { DataTable } from "@/components/dashboard/DataTable";
-import { ChatPanel } from "@/components/chat/ChatPanel";
 import { mockData, aggregateByDate, aggregateByPlatform, calculateTotals } from "@/data/mockData";
 import { TrendingUp, MousePointer, Users, DollarSign } from "lucide-react";
 
@@ -15,24 +14,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen gradient-bg">
-      {/* Header */}
-      <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-10">
-        <div className="container mx-auto px-4 py-6">
-          <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-3xl font-bold gradient-primary bg-clip-text text-transparent">
-                Dashboard de Marketing
-              </h1>
-              <p className="text-muted-foreground mt-1">
-                Análise de desempenho de campanhas digitais
-              </p>
-            </div>
-            <div className="px-4 py-2 rounded-lg bg-accent/10 border border-accent/20">
-              <span className="text-sm font-medium text-accent">Dados do Google Sheets</span>
-            </div>
-          </div>
-        </div>
-      </header>
 
       {/* Main Content */}
       <main className="container mx-auto px-4 py-8">
@@ -87,9 +68,6 @@ const Index = () => {
         {/* Data Table */}
         <DataTable data={mockData} />
       </main>
-
-      {/* Chat Panel */}
-      <ChatPanel />
     </div>
   );
 };
