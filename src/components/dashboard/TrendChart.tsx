@@ -5,8 +5,8 @@ interface TrendChartProps {
   data: Array<{
     date: string;
     gastos: number;
-    cliques: number;
     leads: number;
+    oportunidades: number;
   }>;
 }
 
@@ -44,18 +44,18 @@ export const TrendChart = ({ data }: TrendChartProps) => {
           />
           <Line 
             type="monotone" 
-            dataKey="cliques" 
+            dataKey="leads" 
             stroke="hsl(var(--primary))" 
             strokeWidth={2}
-            name="Cliques"
+            name="Leads"
             dot={{ fill: "hsl(var(--primary))", r: 4 }}
           />
           <Line 
             type="monotone" 
-            dataKey="leads" 
+            dataKey="oportunidades" 
             stroke="hsl(var(--accent))" 
             strokeWidth={2}
-            name="Leads"
+            name="Oportunidades"
             dot={{ fill: "hsl(var(--accent))", r: 4 }}
           />
         </LineChart>

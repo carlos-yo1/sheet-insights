@@ -5,8 +5,8 @@ interface PlatformChartProps {
   data: Array<{
     plataforma: string;
     gastos: number;
-    cliques: number;
     leads: number;
+    oportunidades: number;
   }>;
 }
 
@@ -42,16 +42,16 @@ export const PlatformChart = ({ data }: PlatformChartProps) => {
             name="Gastos"
           />
           <Bar 
-            dataKey="cliques" 
+            dataKey="leads" 
             fill="hsl(var(--primary))" 
             radius={[8, 8, 0, 0]}
-            name="Cliques"
+            name="Leads"
           />
           <Bar 
-            dataKey="leads" 
+            dataKey="oportunidades" 
             fill="hsl(var(--accent))" 
             radius={[8, 8, 0, 0]}
-            name="Leads"
+            name="Oportunidades"
           />
         </BarChart>
       </ResponsiveContainer>
