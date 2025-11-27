@@ -26,8 +26,8 @@ export const MetricsCard = ({
 
   return (
     <Card className="p-6 shadow-elegant transition-smooth hover:shadow-lg hover:translate-y-[-2px]">
-      <div className="flex items-start justify-between">
-        <div className="flex-1">
+      <div className="flex items-start justify-between gap-4">
+        <div className="flex-1 min-w-0">
           <p className="text-sm font-medium text-muted-foreground mb-1">{title}</p>
           <h3 className="text-3xl font-bold mb-2">{value}</h3>
           {change && (
@@ -36,7 +36,7 @@ export const MetricsCard = ({
             </p>
           )}
         </div>
-        <div className={`p-3 rounded-lg bg-secondary/50 ${iconColor}`}>
+        <div className={`flex-shrink-0 p-3 rounded-lg bg-secondary/50 ${iconColor}`}>
           <Icon className="w-6 h-6" />
         </div>
       </div>
