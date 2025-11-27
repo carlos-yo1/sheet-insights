@@ -25,8 +25,8 @@ export const MetricsCard = ({
     : "text-muted-foreground";
 
   return (
-    <Card className="p-6 shadow-elegant transition-smooth hover:shadow-lg hover:translate-y-[-2px]">
-      <div className="flex items-start justify-between gap-4">
+    <Card className="p-6 shadow-elegant transition-smooth hover:shadow-lg hover:translate-y-[-2px] overflow-hidden">
+      <div className="flex items-center justify-between gap-4">
         <div className="flex-1 min-w-0">
           <p className="text-sm font-medium text-muted-foreground mb-1">{title}</p>
           <h3 className="text-3xl font-bold mb-2">{value}</h3>
@@ -36,8 +36,8 @@ export const MetricsCard = ({
             </p>
           )}
         </div>
-        <div className={`flex-shrink-0 p-3 rounded-lg bg-secondary/50 ${iconColor}`}>
-          <Icon className="w-6 h-6" />
+        <div className={`flex-shrink-0 p-3 rounded-lg bg-muted ${iconColor}`}>
+          <Icon className="w-5 h-5" />
         </div>
       </div>
     </Card>
