@@ -8,112 +8,83 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 210 20% 98%;
-    --foreground: 215 25% 15%;
+    /* LEÃO MARKETERIA - Premium Liquid Glass Design System */
+    --background: 240 13% 5%;
+    --foreground: 240 33% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    --card: 225 6% 13%;
+    --card-foreground: 240 33% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
+    --popover: 225 6% 13%;
+    --popover-foreground: 240 33% 98%;
 
-    --primary: 195 85% 48%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 137 96% 59%;
+    --primary-foreground: 0 0% 0%;
+    --primary-dark: 137 96% 59%;
+    --primary-darker: 137 96% 45%;
+
+    --secondary: 211 100% 52%;
+    --secondary-foreground: 240 33% 98%;
+
+    --muted: 225 6% 18%;
+    --muted-foreground: 0 0% 90%;
+
+    --accent: 211 100% 52%;
+    --accent-foreground: 240 33% 98%;
+
+    --premium: 43 51% 54%;
+    --premium-foreground: 240 13% 5%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 240 33% 98%;
+
+    --border: 225 6% 20%;
+    --input: 225 6% 16%;
+    --ring: 211 100% 52%;
+
+    --radius: 1rem;
+
+    --success: 152 100% 45%;
+    --warning: 43 51% 54%;
+    --info: 211 100% 52%;
+
+    /* Liquid Glass Effects */
+    --glass-bg: 225 6% 13%;
+    --glass-border: 240 33% 98%;
+    --glass-blur: 12px;
+    --glass-opacity: 0.08;
+    --glass-border-opacity: 0.12;
     
-    --primary-glow: 195 90% 65%;
-
-    --secondary: 215 20% 94%;
-    --secondary-foreground: 215 25% 15%;
-
-    --muted: 215 20% 94%;
-    --muted-foreground: 215 15% 45%;
-
-    --accent: 160 75% 45%;
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 75% 60%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 215 20% 88%;
-    --input: 215 20% 88%;
-    --ring: 195 85% 48%;
-
-    --radius: 0.75rem;
+    /* Glow effects */
+    --glow-primary: 211 100% 52%;
+    --glow-secondary: 152 100% 45%;
+    --glow-premium: 43 51% 54%;
     
-    --gradient-primary: linear-gradient(135deg, hsl(195 85% 48%), hsl(195 90% 65%));
-    --gradient-accent: linear-gradient(135deg, hsl(160 75% 45%), hsl(170 70% 55%));
-    --gradient-bg: linear-gradient(180deg, hsl(210 25% 98%), hsl(215 20% 96%));
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(137 96% 59%), hsl(137 96% 70%));
+    --gradient-secondary: linear-gradient(135deg, hsl(211 100% 52%), hsl(211 100% 65%));
+    --gradient-accent: linear-gradient(135deg, hsl(152 100% 45%), hsl(152 100% 55%));
+    --gradient-premium: linear-gradient(135deg, hsl(43 51% 54%), hsl(43 51% 65%));
+    --gradient-bg: linear-gradient(180deg, hsl(240 13% 5%), hsl(225 6% 10%));
     
-    --shadow-sm: 0 2px 8px -2px hsl(215 25% 15% / 0.08);
-    --shadow-md: 0 8px 24px -4px hsl(215 25% 15% / 0.12);
-    --shadow-lg: 0 16px 48px -8px hsl(215 25% 15% / 0.16);
+    /* Shadows */
+    --shadow-sm: 0 2px 8px -2px hsl(0 0% 0% / 0.4);
+    --shadow-md: 0 8px 24px -4px hsl(0 0% 0% / 0.5);
+    --shadow-lg: 0 16px 48px -8px hsl(0 0% 0% / 0.6);
+    --shadow-glow: 0 0 20px hsl(211 100% 52% / 0.3);
     
+    /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 215 30% 8%;
-    --foreground: 210 20% 95%;
-
-    --card: 215 28% 11%;
-    --card-foreground: 210 20% 95%;
-
-    --popover: 215 28% 11%;
-    --popover-foreground: 210 20% 95%;
-
-    --primary: 195 85% 55%;
-    --primary-foreground: 215 30% 8%;
-    
-    --primary-glow: 195 90% 70%;
-
-    --secondary: 215 25% 16%;
-    --secondary-foreground: 210 20% 95%;
-
-    --muted: 215 25% 16%;
-    --muted-foreground: 215 15% 60%;
-
-    --accent: 160 75% 50%;
-    --accent-foreground: 215 30% 8%;
-
-    --destructive: 0 75% 60%;
-    --destructive-foreground: 210 20% 95%;
-
-    --border: 215 25% 18%;
-    --input: 215 25% 18%;
-    --ring: 195 85% 55%;
-    
-    --gradient-primary: linear-gradient(135deg, hsl(195 85% 55%), hsl(195 90% 70%));
-    --gradient-accent: linear-gradient(135deg, hsl(160 75% 50%), hsl(170 70% 60%));
-    --gradient-bg: linear-gradient(180deg, hsl(215 30% 8%), hsl(215 28% 11%));
-    
-    --shadow-sm: 0 2px 8px -2px hsl(0 0% 0% / 0.3);
-    --shadow-md: 0 8px 24px -4px hsl(0 0% 0% / 0.4);
-    --shadow-lg: 0 16px 48px -8px hsl(0 0% 0% / 0.5);
-    
-    --sidebar-background: 215 30% 8%;
-    --sidebar-foreground: 210 20% 95%;
-    --sidebar-primary: 195 85% 55%;
-    --sidebar-primary-foreground: 215 30% 8%;
-    --sidebar-accent: 215 25% 16%;
-    --sidebar-accent-foreground: 210 20% 95%;
-    --sidebar-border: 215 25% 18%;
-    --sidebar-ring: 195 85% 55%;
+    --sidebar-background: 240 13% 5%;
+    --sidebar-foreground: 240 33% 98%;
+    --sidebar-primary: 137 96% 59%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 225 6% 18%;
+    --sidebar-accent-foreground: 240 33% 98%;
+    --sidebar-border: 225 6% 20%;
+    --sidebar-ring: 211 100% 52%;
   }
 }
 
@@ -133,8 +104,16 @@ All colors MUST be HSL.
     background: var(--gradient-primary);
   }
   
+  .gradient-secondary {
+    background: var(--gradient-secondary);
+  }
+  
   .gradient-accent {
     background: var(--gradient-accent);
+  }
+  
+  .gradient-premium {
+    background: var(--gradient-premium);
   }
   
   .gradient-bg {
@@ -145,13 +124,27 @@ All colors MUST be HSL.
     box-shadow: var(--shadow-md);
   }
   
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
   .transition-smooth {
     transition: var(--transition-smooth);
   }
   
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+  
   .glass-effect {
-    background: hsl(var(--card) / 0.8);
+    background: hsl(var(--glass-bg) / var(--glass-opacity));
+    backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid hsl(var(--glass-border) / var(--glass-border-opacity));
+  }
+  
+  .glass-card {
+    background: hsl(var(--card) / 0.6);
     backdrop-filter: blur(12px);
-    border: 1px solid hsl(var(--border) / 0.5);
+    border: 1px solid hsl(var(--border) / 0.3);
   }
 }
