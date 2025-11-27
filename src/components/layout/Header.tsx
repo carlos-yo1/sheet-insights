@@ -8,7 +8,7 @@ export const Header = () => {
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center gap-8">
             <div>
-              <h1 className="text-2xl font-bold gradient-primary bg-clip-text text-transparent">
+              <h1 className="text-2xl font-bold text-foreground">
                 Marketing Analytics
               </h1>
             </div>

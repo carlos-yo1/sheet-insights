@@ -1,7 +1,6 @@
 import { MetricsCard } from "@/components/dashboard/MetricsCard";
 import { TrendChart } from "@/components/dashboard/TrendChart";
 import { PlatformChart } from "@/components/dashboard/PlatformChart";
-import { DataTable } from "@/components/dashboard/DataTable";
 import { mockData, aggregateByDate, aggregateByPlatform, calculateTotals } from "@/data/mockData";
 import { TrendingUp, Target, Users, DollarSign } from "lucide-react";
 
@@ -72,13 +71,10 @@ const Index = () => {
         </div>
 
         {/* Charts */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <TrendChart data={trendData} />
           <PlatformChart data={platformData} />
         </div>
-
-        {/* Data Table */}
-        <DataTable data={mockData} />
       </main>
     </div>
   );
